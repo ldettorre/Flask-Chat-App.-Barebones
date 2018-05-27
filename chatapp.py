@@ -9,7 +9,7 @@ def get_index(): # this is the function located at the above route/url that gets
     return render_template("index.html")
 
 messages =[]
-banned_words =["fuck"]
+banned_words =["cats"]
 
 
 
@@ -29,7 +29,7 @@ def create_user():
     
 @app.route("/<username>")
 def get_userpage(username):
-    return render_template("chat.html",username=username, all_messages=messages)
+    return render_template("chat.html", username=username , all_messages=messages)
     
     
     
